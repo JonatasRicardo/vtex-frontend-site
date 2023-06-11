@@ -19,7 +19,7 @@ export default function HeaderClient(props: { children: ReactNode }) {
     }, [scroll, isSticky]);
 
     const stickyClasses = useMemo(() => {
-        if (isSticky) return 'bg-navy/80';
+        if (isSticky) return 'bg-navy/70 backdrop-blur-md';
         return 'bg-navy/00';
     }, [isSticky]);
 

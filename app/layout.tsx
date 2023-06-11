@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={sulphur_point.className}>{children}</body>
+      <body className={`${sulphur_point.className} bg-navy`}>{children}</body>
     </html>
   )
 }
