@@ -15,6 +15,7 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'hero': `url('/img/bg-mobile.png')`,
         'hero-desktop': `url('/img/bg-desktop.png')`,
+        'hero-xl-desktop': `url('/img/bg-2xl-desktop.png')`,
       },
       height: {
         'header-mobile': 'var(--header-height-mobile)',
@@ -30,8 +31,8 @@ module.exports = {
         yellow: '#FFE500',
         lightGray: '#EEEFF1',
         gray: '#353434',
-        black: '#000',
-        white: '#FFF',
+        black: '#000000',
+        white: '#FFFFFF',
         blue: '#072A83'
       }
     },
