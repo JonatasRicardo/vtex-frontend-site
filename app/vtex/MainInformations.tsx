@@ -12,18 +12,18 @@ function InfoIcon({
     icon
 }: InfoIconProps) {
     return (
-        <li className="flex flex-col items-center text-center flex-1 px-2 lg:flex-row lg:mb-6">
+        <li className="flex flex-col items-center text-center flex-1 px-2 md:flex-row md:mb-6">
             <span className="scale-75 lg:scale-100 lg:w-20">{icon}</span>
-            <span className="text-green lg:ml-4">{label}</span>
+            <span className="text-green px-1 text-sm mt-4 lg:text-lg">{label}</span>
         </li>
     )
 }
 
 export default function MainIformations() {
     return (
-        <div className="container pt-8 flex justify-between flex-col lg:flex-row lg:pt-16">
-            <div>
-                <ul className="flex lg:flex-col">
+        <div className="container pt-8 flex justify-between flex-col items-center md:flex-row md:pt-16">
+            <div className="flex">
+                <ul className="flex md:flex-col">
                     <InfoIcon
                         icon={
                             <Image
@@ -69,7 +69,7 @@ export default function MainIformations() {
                     height={431}
                     alt=""
                     aria-labelledby="lojistas-agencias"
-                    className="hidden lg:inline-flex"
+                    className="hidden md:inline-flex"
                 />
                 <Image
                     src="/img/vcurso-vtex-io-para-lojistas-e-agencias-sm.svg"
@@ -77,7 +77,7 @@ export default function MainIformations() {
                     height={735}
                     alt=""
                     aria-labelledby="lojistas-agencias"
-                    className="lg:hidden mt-10"
+                    className="md:hidden mt-10"
                 />
                 <div id="lojistas-agencias" className="sr-only">
                     <h3>Para Lojjistas:</h3>

@@ -1,6 +1,7 @@
 import Hero from "./Hero";
 import Header from "./Header";
 import MainInformations from "./MainInformations";
+import CourseContent from "./CourseContent";
 
 export default function VTEX() {
   return (
@@ -8,6 +9,7 @@ export default function VTEX() {
       <Header />
       <Hero />
       <MainInformations />
+      <CourseContent />
     </main>
   );
 }

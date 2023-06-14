@@ -1,6 +1,6 @@
 import type { ComponentProps } from 'react';
 
-interface InputGroupProps extends ComponentProps<"button"> {
+interface ButtonProps extends ComponentProps<"button"> {
   mode?: 'normal' | 'ghost' | undefined;
   color?: 'green' | 'blue' | 'navy' | 'orange' | 'yellow';
 }
@@ -10,7 +10,7 @@ export default function Button({
     color = 'green',
     className,
     ...rest
-}: InputGroupProps) {
+}: ButtonProps) {
 
     const colors = {
         'green': 'bg-green text-navy',
