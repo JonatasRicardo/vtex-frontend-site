@@ -5,7 +5,7 @@ export default function Hero() {
     return (
         <section
             className={`
-                w-screen 
+                w-full 
                 aspect-square 
                 pt-[var(--header-height-mobile)]
                 justify-center
