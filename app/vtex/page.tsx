@@ -3,6 +3,7 @@ import Header from "./Header";
 import MainInformations from "./MainInformations";
 import CourseContent from "./CourseContent";
 import Instructor from "./Instructor";
+import Customers from "./Customers";
 
 export default function VTEX() {
   return (
@@ -12,6 +13,7 @@ export default function VTEX() {
       <MainInformations />
       <CourseContent />
       <Instructor />
+      <Customers />
     </main>
   );
 }
