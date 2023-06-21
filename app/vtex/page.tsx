@@ -4,6 +4,7 @@ import MainInformations from "./MainInformations";
 import CourseContent from "./CourseContent";
 import Instructor from "./Instructor";
 import Customers from "./Customers";
+import Pricing from "./Pricing";
 
 export default function VTEX() {
   return (
@@ -14,6 +15,7 @@ export default function VTEX() {
       <CourseContent />
       <Instructor />
       <Customers />
+      <Pricing />
     </main>
   );
 }

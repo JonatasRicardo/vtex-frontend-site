@@ -13,12 +13,12 @@ export default function Customers() {
     ]
 
     return (
-        <div className="self-start overflow-x-hidden w-full lg:self-auto lg:container">
-            <SectionTitle className="mb-3  px-4 pb-4 lg:px-0">Já treinamos</SectionTitle>
-            <section className="overflow-scroll max-w-full px-4 pb-8 lg:px-0 md:overflow-hidden">
+        <div className="self-start overflow-x-hidden w-full md:self-auto md:container">
+            <SectionTitle className="mb-3  px-4 pb-4 md:px-0">Já treinamos</SectionTitle>
+            <section className="overflow-scroll max-w-full px-4 pb-8 md:px-0 md:overflow-hidden">
                 <div className="flex w-max  md:justify-between border-dashed border-white border-2 p-4 md:w-full">
                     {customers.map(customer => (
-                        <div key={customer.src} className="flex justify-center w-32 grow-0 shrink-0 p-3 lg:shrink-1 lg:w-36">
+                        <div key={customer.src} className="flex justify-center w-32 grow-0 shrink-0 p-3 md:shrink-1 md:w-24 lg:w-36">
                             <Image
                                 key={customer.src}
                                 {...customer}
