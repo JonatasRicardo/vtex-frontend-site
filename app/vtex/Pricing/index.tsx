@@ -6,7 +6,7 @@ export default function Pricing() {
         <BoxGradient className="w-full flex justify-center">
             <div className="container overflow-scroll"
             >
-                <div className="pb-8 py-4 flex w-max gap-6 lg:justify-around lg:w-full">
+                <div className="pb-8 py-4 flex w-max gap-6 lg:justify-around lg:w-full lg:pt-16">
                     <PrixeBox
                         title="Anual"
                         features={[

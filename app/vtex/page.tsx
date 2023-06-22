@@ -5,10 +5,11 @@ import CourseContent from "./CourseContent";
 import Instructor from "./Instructor";
 import Customers from "./Customers";
 import Pricing from "./Pricing";
+import Warrant from "./Warrant";
 
 export default function VTEX() {
   return (
-    <main className="flex flex-col items-center bg-contain bg-no-repeat bg-hero bg-navy  md:bg-hero-desktop 2xl:bg-cover 2xl:bg-hero-xl-desktop 2xl:bg-[center_top]">
+    <main className="flex flex-col items-center bg-contain bg-no-repeat bg-hero bg-navy  md:bg-hero-desktop 3xl:bg-cover 3xl:bg-hero-xl-desktop 3xl:bg-[center_top]">
       <Header />
       <Hero />
       <MainInformations />
@@ -16,6 +17,7 @@ export default function VTEX() {
       <Instructor />
       <Customers />
       <Pricing />
+      <Warrant />
     </main>
   );
 }

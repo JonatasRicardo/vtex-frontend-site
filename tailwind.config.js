@@ -33,7 +33,8 @@ module.exports = {
         gray: '#353434',
         black: '#000000',
         white: '#FFFFFF',
-        blue: '#072A83'
+        blue: '#072A83',
+        sky: '#F2F4FA'
       }
     },
   },
