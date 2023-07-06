@@ -43,7 +43,7 @@ export default function PriceBox({
                     {instalments && (<span className="text-md">{instalments}x de </span>)}
                     {to && (<span className="text-6xl text-blue">{to}</span>)}
                 </div>
-                <Button mode="ghost" color={color} className="w-full mt-6 bg-navy" >Eu quero</Button>
+                <Button mode="ghost" color={color} className="w-full mt-6" >Eu quero</Button>
             </div>
         </div>
     )

@@ -30,7 +30,7 @@ export default function Hero() {
                 <div className="flex grow items-center justify-center">
                     <PlayButton />
                 </div>
-                <div className="text-center">
+                <div className="flex justify-center">
                     <Button className="mb-10 lg:mb-16">Quero treinar minha equipe</Button>
                 </div>
             </div>

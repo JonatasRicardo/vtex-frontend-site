@@ -6,6 +6,7 @@ import Instructor from "./Instructor";
 import Customers from "./Customers";
 import Pricing from "./Pricing";
 import Warrant from "./Warrant";
+import Contact from "./Contact";
 
 export default function VTEX() {
   return (
@@ -18,6 +19,7 @@ export default function VTEX() {
       <Customers />
       <Pricing />
       <Warrant />
+      <Contact />
     </main>
   );
 }
