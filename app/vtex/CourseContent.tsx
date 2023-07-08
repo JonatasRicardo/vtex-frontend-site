@@ -1,6 +1,6 @@
 import type { ComponentProps } from 'react';
-import Button from '../blocks/Button';
-import Terminal from '../blocks/Terminal';
+import Button from '../components/blocks/Button';
+import Terminal from '../components/blocks/Terminal';
 
 interface ListItemProps extends ComponentProps<"li"> {
     tag: string

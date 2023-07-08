@@ -46,7 +46,6 @@ export default function Button({
                 text-xl
                 transition-transform
                 hover:scale-105
-                w-fit
 
                 lg:text-2xl
                 lg:px-10

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import SectionTitle from "../blocks/SectionTitle";
+import SectionTitle from "../components/blocks/SectionTitle";
 
 export default function Customers() {
 

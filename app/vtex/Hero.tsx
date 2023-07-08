@@ -1,5 +1,5 @@
-import PlayButton from '../blocks/PlayButton';
-import Button from '../blocks/Button';
+import PlayButton from '../components/blocks/PlayButton';
+import Button from '../components/blocks/Button';
 
 export default function Hero() {
     return (

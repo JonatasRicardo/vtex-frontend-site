@@ -1,6 +1,6 @@
 "use client";
 import { ReactNode, useEffect, useRef, useState, useMemo } from 'react';
-import useScrollPosition from '../../hooks/useScrollPosition';
+import useScrollPosition from '@/app/hooks/useScrollPosition';
 
 
 export default function HeaderClient(props: { children: ReactNode }) {
@@ -29,9 +29,9 @@ export default function HeaderClient(props: { children: ReactNode }) {
                 <div className='w-8/12'>
                     {props.children}
                 </div>
-                <button className="text-white">
+                <a href="https://treinamentovtex.club.hotmart.com/index" target="_blank" className="text-white">
                     login
-                </button>
+                </a>
             </div>
         </header>
     )

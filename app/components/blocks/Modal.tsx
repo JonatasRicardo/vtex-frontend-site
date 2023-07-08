@@ -16,7 +16,7 @@ export default function Modal(props: ModalProps) {
         <div tabIndex={-1} aria-hidden="true" className={`bg-navy/70 backdrop-blur-md fixed top-0 left-0 right-0 z-50 w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-full max-h-full ${visibilityClass}`}>
             <div className="relative w-full max-w-full  max-h-full">
 
-                <div className="relative bg-white rounded-lg shadow w-screen">
+                <div className="relative bg-white rounded-lg shadow">
 
                     <div className="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
                         <h3 className="text-xl font-semibold text-navy">

@@ -1,5 +1,5 @@
 import type { ComponentProps, ReactNode} from 'react';
-import Button from '@/app/blocks/Button';
+import Button from '@/app/components/blocks/Button';
 
 interface PriceBoxProps extends ComponentProps<"div"> {
     title: string,

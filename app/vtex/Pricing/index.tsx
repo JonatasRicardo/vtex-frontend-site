@@ -1,4 +1,4 @@
-import BoxGradient from "../../blocks/BoxGradient";
+import BoxGradient from "../../components/blocks/BoxGradient";
 import PrixeBox from "./PrixeBox";
 
 export default function Pricing() {
