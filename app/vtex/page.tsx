@@ -8,20 +8,23 @@ import Pricing from "./Pricing";
 import Warrant from "./Warrant";
 import Contact from "./Contact";
 import Footer from "./Footer";
+import { Provider } from "./PageContext";
 
 export default function VTEX() {
   return (
-    <main className="flex flex-col items-center bg-contain bg-no-repeat bg-hero bg-navy  md:bg-hero-desktop 3xl:bg-cover 3xl:bg-hero-xl-desktop 3xl:bg-[center_top]">
-      <Header />
-      <Hero />
-      <MainInformations />
-      <CourseContent />
-      <Instructor />
-      <Customers />
-      <Pricing />
-      <Warrant />
-      <Contact />
-      <Footer />
-    </main>
+    <Provider>
+      <main className="flex flex-col items-center bg-contain bg-no-repeat bg-hero bg-navy  md:bg-hero-desktop 3xl:bg-cover 3xl:bg-hero-xl-desktop 3xl:bg-[center_top]">
+        <Header />
+        <Hero />
+        <MainInformations />
+        <CourseContent />
+        <Instructor />
+        <Customers />
+        <Pricing />
+        <Warrant />
+        <Contact />
+        <Footer />
+      </main>
+    </Provider>
   );
 }
