@@ -1,12 +1,36 @@
 "use client";
-import { ReactNode, useState, createContext } from "react";
+import { ReactNode, useState, createContext, useRef } from "react";
 
-export const Context = createContext({
+
+type Reference = React.MutableRefObject<HTMLDivElement | null>;
+interface PageCtx {
+    showModal: boolean,
+    loading: boolean,
+    toggleModal: () => void,
+    openWhatsApp: () => void,
+    contactSubmit: (event: any) => void,
+    scrollToId: (query: string) => void,
+}
+
+const scrollToId = (elementId: string) => {
+    const destinationPosition = window.document.getElementById(elementId)?.offsetTop;
+    const headerHeight = window.document.getElementById('header')?.offsetHeight ?? 0;
+    if(destinationPosition) {
+        window.scrollTo({
+            top: destinationPosition-headerHeight,
+            left: 0,
+            behavior: "smooth",
+        });
+    }
+}
+
+export const Context = createContext<PageCtx>({
     showModal: false,
     loading: false,
     toggleModal: () => {},
     openWhatsApp: () => {},
-    contactSubmit: (event: any) => {},
+    contactSubmit: () => {},
+    scrollToId
 });
 
 export const Provider = (props: { children: ReactNode }) => {
@@ -29,7 +53,7 @@ export const Provider = (props: { children: ReactNode }) => {
 
         (async () => {
             setLoading(() => true);
-            const response = await fetch('/api/leads/contact', {
+            const response = await fetch('/marketing/api/send-email', {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -50,6 +74,7 @@ export const Provider = (props: { children: ReactNode }) => {
                 toggleModal,
                 openWhatsApp,
                 contactSubmit,
+                scrollToId
             }}
         >
             {props.children}

@@ -1,7 +1,9 @@
 import PlayButton from '../components/blocks/PlayButton';
 import Button from '../components/blocks/Button';
+import Go2Price from './Go2Price';
 
 export default function Hero() {
+
     return (
         <section
             className={`
@@ -31,7 +33,7 @@ export default function Hero() {
                     <PlayButton />
                 </div>
                 <div className="flex justify-center">
-                    <Button className="mb-10 lg:mb-16">Quero treinar minha equipe</Button>
+                    <Go2Price className="mb-10 lg:mb-16">Quero treinar minha equipe</Go2Price>
                 </div>
             </div>
         </section>

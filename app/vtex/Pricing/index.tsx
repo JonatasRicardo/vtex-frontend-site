@@ -1,9 +1,13 @@
+"use client"
+import { useContext } from 'react';
 import BoxGradient from "../../components/blocks/BoxGradient";
 import PrixeBox from "./PrixeBox";
+import { Context } from '@/app/vtex/PageContext';
 
 export default function Pricing() {
+
     return (
-        <BoxGradient className="w-full flex justify-center">
+        <BoxGradient id="price" className="w-full flex justify-center">
             <div className="container overflow-scroll"
             >
                 <div className="pb-8 py-4 flex w-max gap-6 lg:justify-around lg:w-full lg:pt-16">

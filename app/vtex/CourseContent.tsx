@@ -1,6 +1,7 @@
 import type { ComponentProps } from 'react';
 import Button from '../components/blocks/Button';
 import Terminal from '../components/blocks/Terminal';
+import Go2Price from './Go2Price';
 
 interface ListItemProps extends ComponentProps<"li"> {
     tag: string
@@ -33,7 +34,7 @@ export default function CourseContent() {
                     <ListItem tag="VTEX CMS">PDP - Páginas de Detalhe de Produtos (7 aulas)</ListItem>
                 </ul>
                 <div className="flex justify-center">
-                    <Button className="mt5 mb-4 mt-10 lg:mt-8 lg:mb-16 self-center">Quero experimentar grátis</Button>
+                    <Go2Price className="mt5 mb-4 mt-10 lg:mt-8 lg:mb-16 self-center">Quero experimentar grátis</Go2Price>
                 </div>
             </Terminal>
         </div>

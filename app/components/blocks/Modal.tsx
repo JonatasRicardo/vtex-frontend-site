@@ -18,7 +18,7 @@ export default function Modal(props: ModalProps) {
 
                 <div className="relative bg-white rounded-lg shadow">
 
-                    <div className="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+                    <div className="flex items-center justify-between p-4 border-b rounded-t dark:border-gray-600">
                         <h3 className="text-xl font-semibold text-navy">
                             {props.title}
                         </h3>

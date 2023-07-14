@@ -24,7 +24,7 @@ export default function HeaderClient(props: { children: ReactNode }) {
     }, [isSticky]);
 
     return (
-        <header ref={headerRef} className={`${stickyClasses} transition-all w-screen z-20 fixed top-0  flex justify-center items-center px-4 xl:px-0 h-header-mobile md:h-header-desktop`}>
+        <header id="header" ref={headerRef} className={`${stickyClasses} transition-all w-screen z-20 fixed top-0  flex justify-center items-center px-4 xl:px-0 h-header-mobile md:h-header-desktop`}>
             <div className="container flex justify-between items-center">
                 <div className='w-8/12'>
                     {props.children}

@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function Warrant() {
 
     return (
-        <div className="bg-sky w-full flex justify-center pt-2 pb-8 lg:pt-10 lg:pb-8">
+        <div className="bg-sky w-full flex justify-center py-8 lg:pt-10 lg:pb-8">
 
             <div className="container flex justify-center">
                 <div className="hidden md:block">
