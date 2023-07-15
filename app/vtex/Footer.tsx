@@ -1,14 +1,17 @@
 import Image from "next/image"
+import Link from "next/link"
 
 export default function Footer() {
     return (
         <footer className="bg-lightGray w-full flex flex-col items-center justify-center border-0 border-t border-dashed border-navy py-20">
-            <Image
-                src="/img/logo-ensinando-tech.svg"
-                width={200}
-                height={50}
-                alt="Ensinando.tech"
-            />
+            <Link href="/">
+                <Image
+                    src="/img/logo-ensinando-tech.svg"
+                    width={200}
+                    height={50}
+                    alt="Ensinando.tech"
+                />
+            </Link>
             <div className="flex justify-center items-center pt-14 gap-2">
                 <a href="https://www.youtube.com/@ensinandotech2324" target="_blank">
                     <Image

@@ -1,11 +1,10 @@
 import Image from "next/image";
 import Button from "./components/blocks/Button";
 import Link from "next/link";
-import openWhatsApp from "./utils/openWhatsApp";
 
 export default function Home() {
     return (
-        <main className="bg-lightGray w-full min-h-screen h-full flex flex-col items-center">
+        <main className="w-full min-h-screen h-full flex flex-col items-center">
           <header className="py-20">
             <h1>
               <Image

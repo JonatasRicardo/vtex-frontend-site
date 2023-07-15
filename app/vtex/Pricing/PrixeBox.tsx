@@ -1,5 +1,6 @@
 import type { ComponentProps, ReactNode} from 'react';
 import Button from '@/app/components/blocks/Button';
+import Link from 'next/link';
 
 interface PriceBoxProps extends ComponentProps<"div"> {
     title: string,
@@ -10,6 +11,7 @@ interface PriceBoxProps extends ComponentProps<"div"> {
     action?: () => void,
     actionText: string,
     color?: 'green' | 'yellow' | 'orange',
+    link: string,
 }
 
 export default function PriceBox({
@@ -22,6 +24,7 @@ export default function PriceBox({
    actionText = 'Eu quero',
    color = 'green',
    className,
+   link,
    ...props
 }: PriceBoxProps) {
 
@@ -43,7 +46,9 @@ export default function PriceBox({
                     {instalments && (<span className="text-md">{instalments}x de </span>)}
                     {to && (<span className="text-6xl text-blue">{to}</span>)}
                 </div>
-                <Button mode="ghost" color={color} className="w-full mt-6" >Eu quero</Button>
+                <Link href={link}>
+                    <Button mode="ghost" color={color} className="w-full mt-6" >Eu quero</Button>
+                </Link>
             </div>
         </div>
     )

@@ -1,4 +1,3 @@
-"use client"
 import { useContext } from 'react';
 import BoxGradient from "../../components/blocks/BoxGradient";
 import PrixeBox from "./PrixeBox";
@@ -24,6 +23,7 @@ export default function Pricing() {
                         from="R$ 4997,00"
                         to="299,11"
                         instalments={12}
+                        link='https://pay.hotmart.com/Y62502018O?off=gn5tmrr6'
                     />
                     <PrixeBox
                         title="Vitalício"
@@ -39,6 +39,7 @@ export default function Pricing() {
                         from="R$ 7.997,00"
                         to="498,72"
                         instalments={12}
+                        link='https://pay.hotmart.com/N23548953B?off=j15mi9vw'
                     />
                     <PrixeBox
                         title="Consultoria"
@@ -51,6 +52,7 @@ export default function Pricing() {
                         ]}
                         className="w-60 mr-4 lg:w-80"
                         actionText="Saiba mais"
+                        link="/whatsapp"
                     />
                 </div>
             </div>
