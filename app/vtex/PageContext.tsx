@@ -10,6 +10,8 @@ interface PageCtx {
     openWhatsApp: () => void,
     contactSubmit: (event: any) => void,
     scrollToId: (query: string) => void,
+    showVideo: boolean,
+    setShowVideo: React.Dispatch<React.SetStateAction<boolean>>
 }
 
 const scrollToId = (elementId: string) => {
@@ -30,12 +32,15 @@ export const Context = createContext<PageCtx>({
     toggleModal: () => {},
     openWhatsApp: () => {},
     contactSubmit: () => {},
-    scrollToId
+    showVideo: false,
+    setShowVideo: () => {},
+    scrollToId: () => {},
 });
 
 export const Provider = (props: { children: ReactNode }) => {
     const [showModal, setShowModal] = useState(false);
     const [loading, setLoading] = useState<boolean>(false);
+    const [showVideo, setShowVideo] = useState<boolean>(false);
 
     const toggleModal = () => {
         setShowModal(!showModal);
@@ -74,7 +79,9 @@ export const Provider = (props: { children: ReactNode }) => {
                 toggleModal,
                 openWhatsApp,
                 contactSubmit,
-                scrollToId
+                scrollToId,
+                showVideo,
+                setShowVideo,
             }}
         >
             {props.children}

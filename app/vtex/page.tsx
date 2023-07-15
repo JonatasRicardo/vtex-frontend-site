@@ -9,6 +9,7 @@ import Warrant from "./Warrant";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import { Provider } from "./PageContext";
+import FullVideo from "../components/blocks/FullVideo";
 
 export default function VTEX() {
   return (
@@ -24,6 +25,7 @@ export default function VTEX() {
         <Warrant />
         <Contact />
         <Footer />
+        <FullVideo />
       </main>
     </Provider>
   );
