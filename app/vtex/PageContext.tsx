@@ -1,13 +1,12 @@
 "use client";
 import { ReactNode, useState, createContext, useRef } from "react";
+import openWhatsApp from '@/app/utils/openWhatsApp';
 
-
-type Reference = React.MutableRefObject<HTMLDivElement | null>;
 interface PageCtx {
     showModal: boolean,
     loading: boolean,
     toggleModal: () => void,
-    openWhatsApp: () => void,
+    openWhatsApp: ({}) => void,
     contactSubmit: (event: any) => void,
     scrollToId: (query: string) => void,
     showVideo: boolean,
@@ -44,11 +43,6 @@ export const Provider = (props: { children: ReactNode }) => {
 
     const toggleModal = () => {
         setShowModal(!showModal);
-    }
-
-    const openWhatsApp = () => {
-        const telefone = '5521982863515';
-        window.open(`https://api.whatsapp.com/send?phone=${telefone}&text=Tenho%20interesse%20no%20treinamento%20vtex`, "_blank")
     }
 
     const contactSubmit = (event: any) => {

@@ -1,6 +1,6 @@
 "use client";
 import { ReactNode, useEffect, useRef, useState, useMemo } from 'react';
-import useScrollPosition from '@/app/hooks/useScrollPosition';
+import useScrollPosition from '@/app/utils/hooks/useScrollPosition';
 
 
 export default function HeaderClient(props: { children: ReactNode }) {
