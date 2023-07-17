@@ -1,6 +1,5 @@
 import Image from "next/image";
-import Button from "./components/blocks/Button";
-import Link from "next/link";
+import LinkButton from "./components/blocks/Button/LinkButton";
 
 export default function Home() {
     return (
@@ -18,12 +17,8 @@ export default function Home() {
           </header>
 
           <div className="container max-w-md px-5  flex flex-col justify-center gap-8">
-            <Link href="/vtex">
-              <Button color="navy" className="w-full">Treinamento Vtex</Button>
-            </Link>
-            <Link href="/whatsapp" target="_blank">
-              <Button color="green" className="w-full">WhatsApp</Button>
-            </Link>
+            <LinkButton href="/vtex" color="navy" className="w-full">Treinamento Vtex</LinkButton>
+            <LinkButton href="/whatsapp" color="green" className="w-full">WhatsApp</LinkButton>
           </div>
           
           <footer className="flex justify-center items-center pt-14 gap-2">

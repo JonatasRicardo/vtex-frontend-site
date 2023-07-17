@@ -1,17 +1,13 @@
-import type { ComponentProps } from 'react';
+type BtnMode = 'normal' | 'ghost';
+type BtnColors = 'green' | 'darkGreen' | 'blue' | 'navy' | 'orange' | 'yellow';
 
-interface ButtonProps extends ComponentProps<"button"> {
-  mode?: 'normal' | 'ghost';
-  color?: 'green' | 'darkGreen' | 'blue' | 'navy' | 'orange' | 'yellow';
-}
+export type { BtnMode, BtnColors }
 
-export default function Button({
+export function getBtnClasses({
     mode = 'normal',
     color = 'green',
-    className,
-    ...rest
-}: ButtonProps) {
-
+    className }: { mode?: BtnMode, color?: BtnColors, className?: string }
+) {
     const normalDefaults = 'shadow-[-6px_6px_0px_0px_#00000095]';
     const normalColors = {
         'green': `bg-green text-navy ${normalDefaults}`,
@@ -34,26 +30,22 @@ export default function Button({
 
     const colors = mode === 'normal' ? normalColors : ghostColors;
 
-    return (
-        <button
-            className={`
-                ${colors[color]} 
-                flex
-                items-center
-                justify-center
+    const classes = `
+        ${colors[color]} 
+        flex
+        items-center
+        justify-center
 
-                rounded-full px-4 py-2
-                text-xl
-                transition-transform
-                hover:scale-105
+        rounded-full px-4 py-2
+        text-xl
+        transition-transform
+        hover:scale-105
 
-                lg:text-2xl
-                lg:px-10
+        lg:text-2xl
+        lg:px-10
 
-                ${className ?? ''}
-            `}
-            {...rest}
-        />
-    )
+        ${className ?? ''}
+    `;
 
+    return classes;
 }

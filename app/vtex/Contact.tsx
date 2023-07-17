@@ -2,7 +2,7 @@
 import { useContext, useState } from 'react';
 import Image from 'next/image';
 import SizeBox from "../components/blocks/SizeBox";
-import Button from "../components/blocks/Button";
+import Button from "../components/blocks/Button/Button";
 import Modal from '../components/blocks/Modal';
 import ContactForm, { FormFields } from '../components/blocks/ContactForm';
 import { Context } from '@/app/vtex/PageContext';

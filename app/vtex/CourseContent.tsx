@@ -1,5 +1,5 @@
 import type { ComponentProps } from 'react';
-import Button from '../components/blocks/Button';
+import Button from '../components/blocks/Button/Button';
 import Terminal from '../components/blocks/Terminal';
 import Go2Price from './Go2Price';
 

@@ -1,6 +1,6 @@
 "use client";
 import { useContext, ComponentProps } from 'react';
-import Button from '../components/blocks/Button';
+import Button from '../components/blocks/Button/Button';
 import { Context } from './PageContext';
 
 export default function Go2Price(props: ComponentProps<typeof Button>) {
