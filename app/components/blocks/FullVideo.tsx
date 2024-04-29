@@ -17,9 +17,10 @@ export default function FullVideo() {
                         </div>
                         <ReactPlayer
                             playing
-                            url="https://www.youtube.com/embed/CFvkBMvyxMA"
+                            url="https://www.youtube.com/embed/09FchcgsI_M"
                             width="100%"
                             height="100%"
+                            controls
                         />
                     </div>
                 </>

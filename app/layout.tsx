@@ -21,9 +21,9 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <head>
-        <meta name="theme-color" content="#142032" />
-        <meta name="msapplication-TileColor" content="#142032" />
-        <title>O melhor curso de desenvolvimento VTEX IO! [teste grátis]</title>
+        <meta name="theme-color" content="#001447" />
+        <meta name="msapplication-TileColor" content="#001447" />
+        <title>O melhor curso de desenvolvimento VTEX IO!</title>
         <meta name="description" content="Treinamento para desenvolvedores VTEX IO!" />
         <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
         <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png" />

@@ -9,7 +9,7 @@ const sulphur_point = Sulphur_Point({
 })
 
 export const metadata = {
-  title: 'O melhor curso de desenvolvimento VTEX IO! [teste grátis]',
+  title: 'O melhor curso de desenvolvimento VTEX IO! ',
   description: 'Treinamento para desenvolvedores VTEX IO!',
 }
 
@@ -21,9 +21,9 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
      <head>
-        <meta name="theme-color" content="#142032" />
-        <meta name="msapplication-TileColor" content="#142032" />
-        <title>O melhor curso de desenvolvimento VTEX IO! [teste grátis]</title>
+        <meta name="theme-color" content="#001447" />
+        <meta name="msapplication-TileColor" content="#001447" />
+        <title>O melhor curso de desenvolvimento VTEX IO! </title>
         <meta name="description" content="Treinamento para desenvolvedores VTEX IO!" />
         <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
         <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png" />
@@ -39,7 +39,7 @@ export default function RootLayout({
               "@id": "#product",
               "@type": "IndividualProduct",
               "description": "Treinamento para desenvolvedores VTEX IO!",
-              "name": "O melhor curso de desenvolvimento VTEX IO! [teste grátis]"
+              "name": "O melhor curso de desenvolvimento VTEX IO! "
             })
           }}
         />

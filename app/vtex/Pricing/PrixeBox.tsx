@@ -1,12 +1,15 @@
 import type { ComponentProps, ReactNode} from 'react';
 import Button from '@/app/components/blocks/Button/Button';
 import Link from 'next/link';
+import { BtnMode } from '@/app/components/blocks/Button/common';
 
 interface PriceBoxProps extends ComponentProps<"div"> {
     title: string,
     features: string[] | ReactNode[],
     from?: string,
     to?: string,
+    priceText?: string,
+    btnMode?: BtnMode,
     instalments?: number,
     action?: () => void,
     actionText: string,
@@ -20,7 +23,9 @@ export default function PriceBox({
    from,
    to,
    instalments,
+   priceText,
    action = () => {},
+   btnMode = 'ghost',
    actionText = 'Eu quero',
    color = 'green',
    className,
@@ -43,11 +48,12 @@ export default function PriceBox({
                 </ul>
                 <div className="text-right mt-6">
                     {from && <span className="line-through text-2xl">{from}</span>}<br/>
+                    {priceText && (<span className="text-md">{priceText}</span>)}
                     {instalments && (<span className="text-md">{instalments}x de </span>)}
                     {to && (<span className="text-6xl text-blue">{to}</span>)}
                 </div>
                 <Link href={link}>
-                    <Button mode="ghost" color={color} className="w-full mt-6" >Eu quero</Button>
+                    <Button mode={btnMode} color={color} className="w-full mt-6" >{actionText}</Button>
                 </Link>
             </div>
         </div>

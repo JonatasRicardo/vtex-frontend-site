@@ -11,46 +11,37 @@ export default function Pricing() {
             >
                 <div className="pb-8 py-4 flex w-max gap-6 lg:justify-around lg:w-full lg:pt-16">
                     <PrixeBox
-                        title="Anual"
-                        features={[
-                            'VTEX IO',
-                            'VTEX CMS',
-                            'Acesso por 1 ano',
-                            <span className="text-blue" key="3">3 dias grátis</span>,
-                        ]}
-                        className="ml-4 w-60 lg:ml-0 lg:w-80"
-                        actionText="Eu quero"
-                        from="R$ 4997,00"
-                        to="299,11"
-                        instalments={12}
-                        link='https://pay.hotmart.com/Y62502018O?off=gn5tmrr6'
-                    />
-                    <PrixeBox
-                        title="Vitalício"
-                        color="yellow"
+                        title="Acesso Vitalício"
                         features={[
                             'VTEX IO',
                             'VTEX CMS',
                             <span className="text-blue" key="2">Acesso vitalício</span>,
-                            <span className="text-blue" key="3">4 Horas de consultoria</span>,
+                            <span className="text-blue" key="3">2 Horas de consultoria</span>,
+                            <span className="text-blue" key="4">Plano de ação personalizado</span>,
                         ]}
-                        className="w-60 lg:w-80"
-                        actionText="Eu quero"
-                        from="R$ 7.997,00"
-                        to="498,72"
-                        instalments={12}
-                        link='https://pay.hotmart.com/N23548953B?off=j15mi9vw'
+                        className="ml-4 w-1/2 lg:ml-0 lg:w-1/3"
+                        actionText="Compre agora"
+                        from="R$ 4997,00"
+                        priceText='por apenas'
+                        to="1497"
+                        btnMode='normal'
+                        // instalments={12}
+                        link='https://pay.hotmart.com/N23548953B?off=j15mi9vw&bid=1714354922733'
                     />
                     <PrixeBox
                         title="Consultoria"
                         color="orange"
                         features={[
+                            'VTEX IO',
+                            'VTEX CMS',
                             <span className="text-blue" key="0">Atuamos como co-tech lead no primeiro projeto</span>,
                             <span className="text-blue" key="1">Implantação de equipe própria para lojistas </span>,
                             <span className="text-blue" key="2">Arquitetura de Soluções</span>,
                             <span className="text-blue" key="3">Treinamento personalizado</span>
                         ]}
-                        className="w-60 mr-4 lg:w-80"
+                        priceText="a partir de"
+                        to="4000/mês"
+                        className="w-1/2 mr-4 lg:w-1/3"
                         actionText="Saiba mais"
                         link="/whatsapp"
                     />

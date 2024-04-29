@@ -17,6 +17,7 @@ export default function PlayButton() {
                 lg:scale-150
                 lg:hover:scale-[1.8]
                 transition-all
+                animate-pulse
             `}
         >
             <Image
@@ -25,6 +26,7 @@ export default function PlayButton() {
                 width={18}
                 height={18}
                 priority
+                
             />
         </button>
     )

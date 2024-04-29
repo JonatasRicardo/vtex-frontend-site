@@ -29,7 +29,7 @@ export default function HeaderClient(props: { children: ReactNode }) {
                 <div className='w-8/12'>
                     {props.children}
                 </div>
-                <a href="https://treinamentovtex.club.hotmart.com/index" target="_blank" className="text-white">
+                <a href="https://vtexdevfrontendparaplataformav.club.hotmart.com/index" target="_blank" className="text-white">
                     login
                 </a>
             </div>

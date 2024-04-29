@@ -34,7 +34,7 @@ export default function CourseContent() {
                     <ListItem tag="VTEX CMS">PDP - Páginas de Detalhe de Produtos (7 aulas)</ListItem>
                 </ul>
                 <div className="flex justify-center">
-                    <Go2Price className="mt5 mb-4 mt-10 lg:mt-8 lg:mb-16 self-center">Quero experimentar grátis</Go2Price>
+                    <Go2Price className="mt5 mb-4 mt-10 lg:mt-8 lg:mb-16 self-center">Quero escalar meu time</Go2Price>
                 </div>
             </Terminal>
         </div>
