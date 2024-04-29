@@ -1,6 +1,6 @@
 import PlayButton from '../components/blocks/PlayButton';
 import Button from '../components/blocks/Button/Button';
-import Go2Price from './Go2Price';
+import Go2Id from './Go2Id';
 
 export default function Hero() {
 
@@ -39,9 +39,7 @@ export default function Hero() {
                 <div className="flex grow items-center justify-center">
                     <PlayButton />
                 </div>
-                <div className="flex justify-center">
-                    <Go2Price className="mb-10 lg:mb-16">Quero treinar minha equipe</Go2Price>
-                </div>
+
             </div>
         </section>
     )

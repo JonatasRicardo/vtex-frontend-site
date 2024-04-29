@@ -18,7 +18,7 @@ export default function Warrant() {
                     />
                 </div>
                 <div className=" text-center text-blue px-6 mx-8">
-                    <div className="text-xl mb-2 lg:text-2xl">30 dias de garantia em todos os planos</div>
+                    <div className="text-xl mb-2 lg:text-2xl"><span className="text-2xl mb-2 lg:text-4xl">30 dias</span> de garantia em todos os planos</div>
                     <div className="text-sm lg:text-xl">Não gostou? Devolvemos seu dinheiro sem burocracia</div>
                 </div>
                 <div className="hidden md:block">

@@ -19,7 +19,7 @@ export default function Contact() {
 
     const ContactOrWz = () => (
 
-        <div className="flex flex-col lg:flex-row items-center lg:items-stretch justify-center w-full lg:py-6">
+        <div  className="flex flex-col lg:flex-row items-center lg:items-stretch justify-center w-full lg:py-6">
             <div className="w-full lg:w-5/12">
                 <Button onClick={toggleModal} color="navy" className="lg:hidden shadow-none h-full w-full lg:px-4">
                     Solicitar Contato
@@ -52,7 +52,7 @@ export default function Contact() {
 
     return (
         <>
-            <div className="bg-sky w-full pb-10 pt-0 flex justify-center lg:pt-10">
+            <div id="contact" className="bg-sky w-full pb-10 pt-0 flex justify-center lg:pt-10">
                 <div className="container flex justify-center">
 
                     <h3 className="hidden text-5xl text-blue lg:w-4/12 xl:w-4/12  lg:block lg:pr-8">Quer saber se é pra você?</h3>

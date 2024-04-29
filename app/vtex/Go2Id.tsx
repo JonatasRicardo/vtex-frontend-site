@@ -3,14 +3,18 @@ import { useContext, ComponentProps } from 'react';
 import Button from '../components/blocks/Button/Button';
 import { Context } from './PageContext';
 
-export default function Go2Price(props: ComponentProps<typeof Button>) {
+interface Go2IdProps extends ComponentProps<typeof Button> {
+    destination: string
+}
+
+export default function Go2Id(props: Go2IdProps) {
     const { scrollToId } = useContext(Context);
 
-    const goToPrice = () => {
-        scrollToId('price');
+    const goToSomeId = () => {
+        scrollToId(props.destination);
     }
     return (
-        <Button onClick={goToPrice} {...props}>
+        <Button onClick={goToSomeId} {...props}>
             {props.children}
         </Button>
     )

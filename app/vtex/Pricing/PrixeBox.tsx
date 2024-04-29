@@ -2,6 +2,7 @@ import type { ComponentProps, ReactNode} from 'react';
 import Button from '@/app/components/blocks/Button/Button';
 import Link from 'next/link';
 import { BtnMode } from '@/app/components/blocks/Button/common';
+import Go2Id from '../Go2Id';
 
 interface PriceBoxProps extends ComponentProps<"div"> {
     title: string,
@@ -14,7 +15,8 @@ interface PriceBoxProps extends ComponentProps<"div"> {
     action?: () => void,
     actionText: string,
     color?: 'green' | 'yellow' | 'orange',
-    link: string,
+    link?: string,
+    destination?: string
 }
 
 export default function PriceBox({
@@ -30,6 +32,7 @@ export default function PriceBox({
    color = 'green',
    className,
    link,
+   destination,
    ...props
 }: PriceBoxProps) {
 
@@ -42,7 +45,7 @@ export default function PriceBox({
     return (
         <div className={`flex flex-col self-baseline border-dashed border-2 rounded-2xl ${colors[color].border} ${className}`} {...props}>
             <h2 className={`text-2xl font-bold font p-3 text-center ${colors[color].text}`}>{title}</h2>
-            <div className="py-5 px-8 pb-2 rounded-2xl translate-x-2 translate-y-2 bg-white lg:min-h-[346px]">
+            <div className="py-5 px-8 pb-2 rounded-2xl translate-x-2 translate-y-2 bg-white min-h-[356px] lg:min-h-[395px]">
                 <ul>
                     {features.map((feature, i) => <li className="list-disc md:text-lg" key={i}>{feature}</li>)}
                 </ul>
@@ -52,9 +55,10 @@ export default function PriceBox({
                     {instalments && (<span className="text-md">{instalments}x de </span>)}
                     {to && (<span className="text-6xl text-blue">{to}</span>)}
                 </div>
-                <Link href={link}>
+                {link && <Link href={link}>
                     <Button mode={btnMode} color={color} className="w-full mt-6" >{actionText}</Button>
-                </Link>
+                </Link>}
+                {destination && !link && <Go2Id destination={destination} mode={btnMode} color={color} className="w-full mt-6">{actionText}</Go2Id>}
             </div>
         </div>
     )

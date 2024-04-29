@@ -10,7 +10,7 @@ export default function PlayButton() {
         <button
             onClick={() => setShowVideo(true)}
             className={`
-                bg-blue-950 rounded-full p-4 flex justify-end items-center w-14 h-14
+                bg-blue/20 hover:bg-blue/40 rounded-full p-4 flex justify-end items-center 
                 border border-green
                 shadow-md hover:shadow-lg shadow-green/40 hover:shadow-green/60 
                 mb-2 mt-2
@@ -28,6 +28,8 @@ export default function PlayButton() {
                 priority
                 
             />
+
+            <span className="ml-4 text-green">Assista à apresentação</span>
         </button>
     )
 

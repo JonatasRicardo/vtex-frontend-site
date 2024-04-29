@@ -19,13 +19,12 @@ export default function Pricing() {
                             <span className="text-blue" key="3">2 Horas de consultoria</span>,
                             <span className="text-blue" key="4">Plano de ação personalizado</span>,
                         ]}
-                        className="ml-4 w-1/2 lg:ml-0 lg:w-1/3"
+                        className="ml-4 w-5/12 lg:ml-0 lg:w-1/3"
                         actionText="Compre agora"
                         from="R$ 4997,00"
                         priceText='por apenas'
                         to="1497"
                         btnMode='normal'
-                        // instalments={12}
                         link='https://pay.hotmart.com/N23548953B?off=j15mi9vw&bid=1714354922733'
                     />
                     <PrixeBox
@@ -41,9 +40,9 @@ export default function Pricing() {
                         ]}
                         priceText="a partir de"
                         to="4000/mês"
-                        className="w-1/2 mr-4 lg:w-1/3"
+                        className="w-8/12 mr-4 lg:w-1/3"
                         actionText="Saiba mais"
-                        link="/whatsapp"
+                        destination='contact'
                     />
                 </div>
             </div>

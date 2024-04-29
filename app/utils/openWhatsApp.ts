@@ -1,5 +1,5 @@
 
-const DEFAULT_TEL = '5521982863515';
+const DEFAULT_TEL = '5521980484957';
 const DEFAULT_MESSAGE = 'Tenho interesse no treinamento vtex';
 
 interface openWhatsAppProps {
