@@ -13,9 +13,9 @@ module.exports = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        'hero': `url('/img/bg-mobile.png')`,
-        'hero-desktop': `url('/img/bg-desktop.png')`,
-        'hero-xl-desktop': `url('/img/bg-2xl-desktop.png')`,
+        'hero': `url('/img/bg-mobile.webp')`,
+        'hero-desktop': `url('/img/bg-desktop.webp')`,
+        'hero-xl-desktop': `url('/img/bg-2xl-desktop.webp')`,
       },
       height: {
         'header-mobile': 'var(--header-height-mobile)',
