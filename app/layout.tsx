@@ -1,3 +1,4 @@
+import Script from 'next/script'
 import './globals.css'
 import { Inter, Sulphur_Point } from 'next/font/google'
 
@@ -21,6 +22,18 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <head>
+       <Script async src="https://www.googletagmanager.com/gtag/js?id=UA-158791011-1"></Script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+    
+            gtag('config', 'UA-158791011-1');
+            `
+          }}
+        />
         <meta name="theme-color" content="#001447" />
         <meta name="msapplication-TileColor" content="#001447" />
         <title>O melhor curso de desenvolvimento VTEX IO!</title>
