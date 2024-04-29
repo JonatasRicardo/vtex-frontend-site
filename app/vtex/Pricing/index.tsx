@@ -1,7 +1,8 @@
 import { useContext } from 'react';
 import BoxGradient from "../../components/blocks/BoxGradient";
-import PrixeBox from "./PrixeBox";
+import PriceBox from "./PriceBox";
 import { Context } from '@/app/vtex/PageContext';
+import { CHECKOUT_URL } from '@/app/constants';
 
 export default function Pricing() {
 
@@ -10,7 +11,7 @@ export default function Pricing() {
             <div className="container overflow-scroll"
             >
                 <div className="pb-8 py-4 flex w-max gap-6 lg:justify-around lg:w-full lg:pt-16">
-                    <PrixeBox
+                    <PriceBox
                         title="Acesso Vitalício"
                         features={[
                             'VTEX IO',
@@ -25,9 +26,9 @@ export default function Pricing() {
                         priceText='por apenas'
                         to="1497"
                         btnMode='normal'
-                        link='https://pay.hotmart.com/N23548953B?off=j15mi9vw&bid=1714354922733'
+                        link={CHECKOUT_URL}
                     />
-                    <PrixeBox
+                    <PriceBox
                         title="Consultoria"
                         color="orange"
                         features={[

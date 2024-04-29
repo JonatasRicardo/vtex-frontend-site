@@ -1,10 +1,14 @@
 "use client"
-import { useContext } from "react"
+import { useContext, useState } from "react"
 import ReactPlayer from "react-player"
+import Button from '@/app/components/blocks/Button/Button';
+import Link from 'next/link';
 import { Context } from "@/app/vtex/PageContext"
+import { CHECKOUT_URL } from "@/app/constants";
 
 export default function FullVideo() {
-    const { showVideo, setShowVideo } = useContext(Context)
+    const { showVideo, setShowVideo } = useContext(Context);
+    const [ showBtnCheckout, setShowBtnCheckout ]= useState(false);
 
     return (
         <>
@@ -19,9 +23,17 @@ export default function FullVideo() {
                             playing
                             url="https://www.youtube.com/embed/09FchcgsI_M"
                             width="100%"
-                            height="100%"
+                            height="90%"
                             controls
+                            onProgress={({ playedSeconds }) => {
+                                if (playedSeconds > 333) {
+                                    setShowBtnCheckout(true)
+                                }
+                            }}
                         />
+                        {showBtnCheckout && <Link href={CHECKOUT_URL}>
+                            <Button className="w-full mt-6" >Comprar Agora!</Button>
+                        </Link>}
                     </div>
                 </>
             }
