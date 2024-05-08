@@ -1,5 +1,5 @@
+import { PHONE_NUMBER } from "../constants";
 
-const DEFAULT_TEL = '5521980484957';
 const DEFAULT_MESSAGE = 'Tenho interesse no treinamento vtex';
 
 interface openWhatsAppProps {
@@ -7,7 +7,7 @@ interface openWhatsAppProps {
     message?: string
 }
 export default function openWhatsApp({
-    tel = DEFAULT_TEL,
+    tel = PHONE_NUMBER,
     message = DEFAULT_MESSAGE
  }: openWhatsAppProps) {
     const formatedMessage = encodeURIComponent(message);
